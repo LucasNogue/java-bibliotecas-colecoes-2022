@@ -117,7 +117,7 @@ public class Administrador {
         Sistema.menu();
     }
 
-    public static void excluirPergunta(String resposta) {
+    public static void excluirPergunta(String pergunta) {
         File file = new File("formulario.txt");
 
         try {
@@ -127,7 +127,7 @@ public class Administrador {
             ArrayList<String> salvar = new ArrayList<>();
 
             while (linha!= null) {
-                if(!linha.equals(resposta)) {
+                if(!linha.equals(pergunta)) {
                     salvar.add(linha);
                 }
                 linha = br.readLine();

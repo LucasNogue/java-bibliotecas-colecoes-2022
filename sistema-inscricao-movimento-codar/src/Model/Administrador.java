@@ -44,7 +44,6 @@ public class Administrador {
             case 1 -> Administrador.exibirTodosCandidato();
             case 2 -> Administrador.mostrarIdades();
             default -> System.out.println("Digite uma opção válida");
-            //Criar exceção para digito inválido
         }
     }
 
